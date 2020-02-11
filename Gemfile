@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.4.3'
+ruby '2.6.3'
 
 gem 'rails', '5.1.5'
 
@@ -30,4 +30,3 @@ end
 gem 'loofah', '~> 2.2.1'
 gem 'rails-html-sanitizer', '~> 1.0.4'
 gem 'sprockets', '~> 3.7.2'
-
