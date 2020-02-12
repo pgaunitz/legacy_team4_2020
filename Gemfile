@@ -2,9 +2,6 @@
 
 source 'https://rubygems.org'
 ruby '2.4.3'
-
-gem 'actionview', '>= 5.1.6.2'
-gem 'activejob', '>= 5.1.6.1'
 gem 'bootstrap-sass'
 gem 'chosen-rails'
 gem 'devise'
@@ -13,7 +10,7 @@ gem 'jquery-rails'
 gem 'mailboxer'
 gem 'pg', '~> 0.15'
 gem 'puma', '~> 3.12'
-gem 'rails', '5.1.5'
+gem 'rails', '5.1.6.2'
 gem 'rake', '~> 11.1', '>= 11.1.2'
 gem 'sass-rails', '~> 5.0'
 gem 'turbolinks'
