@@ -16,5 +16,6 @@ Install your forked Repo to:
 * Coveralls.io
 * Semaphore
 * Heroku
+* working on the "user can login"
+* Sign up PR
 
-Sign up PR
