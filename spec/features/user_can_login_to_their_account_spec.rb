@@ -1,6 +1,7 @@
-
+require 'spec/factories/users.rb'
 
 feature 'Check if user can login to their account' do
+    let(:registred_user) {  FactoryBot.create(:user)}
     context 'user is in login page'
 
     before do
