@@ -12,7 +12,7 @@ feature 'Check if user can login to their account' do
 
     describe 'User can log in successfully' do
         let(:registered_user) { FactoryBot.create(:user) }
-        it 'User can see welcome index page' do
+        it 'User can login' do
         fill_in 'Email', with: registered_user.email
         fill_in 'Password', with: registered_user.password
         click_on 'Log in'
