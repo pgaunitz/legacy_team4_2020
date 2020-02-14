@@ -16,28 +16,34 @@ feature 'Check if user can login to their account' do
         fill_in 'Email', with: registered_user.email
         fill_in 'Password', with: registered_user.password
         click_on 'Log in'
-
         expect(page).to have_content 'Signed in successfully'
         end
     end
 
     describe 'User is denied to login - sad path' do
-        it 'Displays error message - Invalid Email or password.' do
-        fill_in 'Email', with: nil
-        fill_in 'Password', with: nil
-        click_on 'Log in'
-        expect(page).to have_content 'Invalid Email or password.'
-        end
+        
+        # No credentials
+        it 'Error when loggin in without credentials' do
+            fill_in 'Email', with: nil
+            fill_in 'Password', with: nil
+            click_on 'Log in'
+            expect(page).to have_content 'Invalid Email or password.'
+        end 
 
-        it 'Displays error message - Forgot your password?' do
+        # Invalid email
+        it 'Error when loggin in with invalid email' do
             fill_in 'Email', with: 'usermail.com'
             fill_in 'Password', with: registered_user.password
             click_on 'Log in'
             expect(page).to have_content 'Forgot your password?'
         end
 
+        # Invalid password
+        it 'Error when loggin in vid invalid password' do
+            fill_in 'Email', with: registered_user.email
+            fill_in 'Password', with: 'assword'
+            click_on 'Log in'
+            expect(page).to have_content 'Forgot your password?'
+        end
     end
-
-
-
 end
