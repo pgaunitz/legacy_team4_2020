@@ -1,3 +1,4 @@
+[![Build Status](https://semaphoreci.com/api/v1/kfrostare/legacy_team4_2020/branches/dependabot-bundler-puma-3-12-4/badge.svg)](https://semaphoreci.com/kfrostare/legacy_team4_2020)
 # The Legacy Code challenge [wip]
 ![The Legacy Code](public/legacycode-printscreen.png)
 ## About the Legacy Code challenge
